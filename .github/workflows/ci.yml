@@ -1,0 +1,36 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements-dev.txt
+
+      - name: Lint (ruff)
+        run: ruff check .
+
+      - name: Fetch C-MAPSS data (SHA-256 pinned)
+        run: python scripts/fetch_data.py
+
+      - name: Build the Parquet data set + quality checks
+        run: python scripts/build_dataset.py
+
+      - name: Train + evaluate the RUL baselines (must run end to end)
+        run: python scripts/train_baseline.py
+
+      - name: Tests (incl. reproducing the committed numbers within tolerance)
+        run: python -m pytest -q

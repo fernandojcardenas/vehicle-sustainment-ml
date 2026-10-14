@@ -1,0 +1,227 @@
+[
+  {
+    "subset": "FD001",
+    "rul_cap": 125,
+    "n_train_rows": 20631,
+    "n_features": 15,
+    "kept_sensors": [
+      "sensor_2",
+      "sensor_3",
+      "sensor_4",
+      "sensor_6",
+      "sensor_7",
+      "sensor_8",
+      "sensor_9",
+      "sensor_11",
+      "sensor_12",
+      "sensor_13",
+      "sensor_14",
+      "sensor_15",
+      "sensor_17",
+      "sensor_20",
+      "sensor_21"
+    ],
+    "models": {
+      "predict_mean": {
+        "rmse": 43.06703554245684,
+        "phm_score": 33629.230598368384,
+        "phm_score_per_engine": 336.29230598368383,
+        "n_engines": 100
+      },
+      "predict_cap": {
+        "rmse": 64.61532326004414,
+        "phm_score": 1502475.4128506004,
+        "phm_score_per_engine": 15024.754128506005,
+        "n_engines": 100
+      },
+      "ridge": {
+        "rmse": 21.670179612563896,
+        "phm_score": 1288.233211800505,
+        "phm_score_per_engine": 12.88233211800505,
+        "n_engines": 100,
+        "cv_rmse_mean": 21.634324494329675,
+        "cv_rmse_std": 1.3756206381947367
+      },
+      "hist_gbr": {
+        "rmse": 17.92769104058508,
+        "phm_score": 916.1851605829025,
+        "phm_score_per_engine": 9.161851605829025,
+        "n_engines": 100,
+        "cv_rmse_mean": 18.684379396265285,
+        "cv_rmse_std": 0.5712794797091949
+      }
+    }
+  },
+  {
+    "subset": "FD002",
+    "rul_cap": 125,
+    "n_train_rows": 53759,
+    "n_features": 21,
+    "kept_sensors": [
+      "sensor_1",
+      "sensor_2",
+      "sensor_3",
+      "sensor_4",
+      "sensor_5",
+      "sensor_6",
+      "sensor_7",
+      "sensor_8",
+      "sensor_9",
+      "sensor_10",
+      "sensor_11",
+      "sensor_12",
+      "sensor_13",
+      "sensor_14",
+      "sensor_15",
+      "sensor_16",
+      "sensor_17",
+      "sensor_18",
+      "sensor_19",
+      "sensor_20",
+      "sensor_21"
+    ],
+    "models": {
+      "predict_mean": {
+        "rmse": 54.0829823871006,
+        "phm_score": 153229.25940403563,
+        "phm_score_per_engine": 591.6187621777437,
+        "n_engines": 259
+      },
+      "predict_cap": {
+        "rmse": 69.367745890177,
+        "phm_score": 5163062.801809272,
+        "phm_score_per_engine": 19934.60541239101,
+        "n_engines": 259
+      },
+      "ridge": {
+        "rmse": 32.66994602906864,
+        "phm_score": 19171.20870878106,
+        "phm_score_per_engine": 74.02011084471452,
+        "n_engines": 259,
+        "cv_rmse_mean": 21.844011900602307,
+        "cv_rmse_std": 0.5401160938786398
+      },
+      "hist_gbr": {
+        "rmse": 29.76305372078999,
+        "phm_score": 13902.93292631283,
+        "phm_score_per_engine": 53.67927770777154,
+        "n_engines": 259,
+        "cv_rmse_mean": 19.662640264894588,
+        "cv_rmse_std": 0.6374022478986991
+      }
+    }
+  },
+  {
+    "subset": "FD003",
+    "rul_cap": 125,
+    "n_train_rows": 24720,
+    "n_features": 16,
+    "kept_sensors": [
+      "sensor_2",
+      "sensor_3",
+      "sensor_4",
+      "sensor_6",
+      "sensor_7",
+      "sensor_8",
+      "sensor_9",
+      "sensor_10",
+      "sensor_11",
+      "sensor_12",
+      "sensor_13",
+      "sensor_14",
+      "sensor_15",
+      "sensor_17",
+      "sensor_20",
+      "sensor_21"
+    ],
+    "models": {
+      "predict_mean": {
+        "rmse": 45.06954844096662,
+        "phm_score": 57949.63715865418,
+        "phm_score_per_engine": 579.4963715865418,
+        "n_engines": 100
+      },
+      "predict_cap": {
+        "rmse": 64.66606528929992,
+        "phm_score": 1390904.7549624115,
+        "phm_score_per_engine": 13909.047549624114,
+        "n_engines": 100
+      },
+      "ridge": {
+        "rmse": 22.292172332913804,
+        "phm_score": 1561.4325980809617,
+        "phm_score_per_engine": 15.614325980809618,
+        "n_engines": 100,
+        "cv_rmse_mean": 19.648975855229743,
+        "cv_rmse_std": 0.8068252165725865
+      },
+      "hist_gbr": {
+        "rmse": 21.544936132174055,
+        "phm_score": 2164.96325820285,
+        "phm_score_per_engine": 21.6496325820285,
+        "n_engines": 100,
+        "cv_rmse_mean": 16.758637628690288,
+        "cv_rmse_std": 0.935567727861869
+      }
+    }
+  },
+  {
+    "subset": "FD004",
+    "rul_cap": 125,
+    "n_train_rows": 61249,
+    "n_features": 21,
+    "kept_sensors": [
+      "sensor_1",
+      "sensor_2",
+      "sensor_3",
+      "sensor_4",
+      "sensor_5",
+      "sensor_6",
+      "sensor_7",
+      "sensor_8",
+      "sensor_9",
+      "sensor_10",
+      "sensor_11",
+      "sensor_12",
+      "sensor_13",
+      "sensor_14",
+      "sensor_15",
+      "sensor_16",
+      "sensor_17",
+      "sensor_18",
+      "sensor_19",
+      "sensor_20",
+      "sensor_21"
+    ],
+    "models": {
+      "predict_mean": {
+        "rmse": 54.90195429215725,
+        "phm_score": 189682.81753731344,
+        "phm_score_per_engine": 764.8500707149735,
+        "n_engines": 248
+      },
+      "predict_cap": {
+        "rmse": 66.71626850979428,
+        "phm_score": 4030492.6731069675,
+        "phm_score_per_engine": 16251.98658510874,
+        "n_engines": 248
+      },
+      "ridge": {
+        "rmse": 34.53276799130939,
+        "phm_score": 12093.438761425867,
+        "phm_score_per_engine": 48.7638659734914,
+        "n_engines": 248,
+        "cv_rmse_mean": 21.19892487315463,
+        "cv_rmse_std": 0.6933396684474273
+      },
+      "hist_gbr": {
+        "rmse": 30.324847264053663,
+        "phm_score": 8579.240623634365,
+        "phm_score_per_engine": 34.59371219207405,
+        "n_engines": 248,
+        "cv_rmse_mean": 17.601213611247307,
+        "cv_rmse_std": 0.9685768743264745
+      }
+    }
+  }
+]

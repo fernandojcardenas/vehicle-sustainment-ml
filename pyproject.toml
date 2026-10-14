@@ -1,0 +1,19 @@
+[project]
+name = "vehicle-sustainment-ml"
+version = "0.1.0"
+description = "Remaining-useful-life prediction on NASA C-MAPSS turbofan data"
+requires-python = ">=3.11"
+readme = "README.md"
+license = { file = "LICENSE" }
+
+[tool.ruff]
+line-length = 100
+src = ["src", "scripts", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B", "SIM"]
+ignore = ["E501"]  # long lines are handled case by case
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
