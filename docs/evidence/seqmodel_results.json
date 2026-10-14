@@ -1,0 +1,62 @@
+[
+  {
+    "subset": "FD001",
+    "model": "temporal_cnn",
+    "metrics": {
+      "rmse": 17.839513939362757,
+      "phm_score": 666.570156745885,
+      "phm_score_per_engine": 6.66570156745885,
+      "n_engines": 100,
+      "val_rmse": 13.56593007439878,
+      "epochs_run": 30,
+      "n_features": 15,
+      "window": 30,
+      "n_train_windows": 20631
+    }
+  },
+  {
+    "subset": "FD002",
+    "model": "temporal_cnn",
+    "metrics": {
+      "rmse": 28.318396383348308,
+      "phm_score": 11132.410781671559,
+      "phm_score_per_engine": 42.9822810103149,
+      "n_engines": 259,
+      "val_rmse": 16.529419172763767,
+      "epochs_run": 17,
+      "n_features": 21,
+      "window": 30,
+      "n_train_windows": 53759
+    }
+  },
+  {
+    "subset": "FD003",
+    "model": "temporal_cnn",
+    "metrics": {
+      "rmse": 19.149921313854183,
+      "phm_score": 958.6470168018202,
+      "phm_score_per_engine": 9.586470168018202,
+      "n_engines": 100,
+      "val_rmse": 19.11628222079487,
+      "epochs_run": 56,
+      "n_features": 16,
+      "window": 30,
+      "n_train_windows": 24720
+    }
+  },
+  {
+    "subset": "FD004",
+    "model": "temporal_cnn",
+    "metrics": {
+      "rmse": 30.483296076627944,
+      "phm_score": 8378.47542974429,
+      "phm_score_per_engine": 33.784175119936656,
+      "n_engines": 248,
+      "val_rmse": 20.30794321064238,
+      "epochs_run": 25,
+      "n_features": 21,
+      "window": 30,
+      "n_train_windows": 61249
+    }
+  }
+]

@@ -17,3 +17,6 @@ ignore = ["E501"]  # long lines are handled case by case
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 addopts = "-q"
+markers = [
+    "slow: trains the sequence model; needs torch and the data (deselect with -m 'not slow')",
+]

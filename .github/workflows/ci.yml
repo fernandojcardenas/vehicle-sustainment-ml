@@ -20,6 +20,9 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements-dev.txt
 
+      - name: Install PyTorch (CPU)
+        run: pip install torch==2.14.1 --index-url https://download.pytorch.org/whl/cpu
+
       - name: Lint (ruff)
         run: ruff check .
 
@@ -32,5 +35,8 @@ jobs:
       - name: Train + evaluate the RUL baselines (must run end to end)
         run: python scripts/train_baseline.py
 
-      - name: Tests (incl. reproducing the committed numbers within tolerance)
+      - name: Train the sequence model end to end (smoke, FD001)
+        run: python scripts/train_seqmodel.py --subsets FD001 --max-epochs 15 --out-md /tmp/mc.md --out-json /tmp/sj.json
+
+      - name: Tests (baselines reproduce; sequence model trains + beats trivial)
         run: python -m pytest -q
